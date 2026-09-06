@@ -3,287 +3,314 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Магическая помощь — обряды, ритуалы и энергетические практики | Мастер Фёдор</title>
-<meta name="description" content="Магическая помощь: обряды и ритуалы на деньги, удачу, любовь, защиту и очищение. Энергетические практики, чистки, медитации, работа со свечами. Мастер Фёдор. Консультация в Telegram @fedormagic">
-<meta name="keywords" content="магическая помощь, обряды, ритуалы, на деньги, на удачу, на любовь, защита, очищение, энергетические практики, чистка энергетики, медитации, свечи, мастер Фёдор">
+<title>Магическая помощь — поддержка в трудной ситуации | Мастер Фёдор</title>
+<meta name="description" content="Магическая помощь: практические обряды, энергетические практики и поддержка в сложной жизненной ситуации. Присоединяйтесь к сообществу и напишите мастеру Фёдору в Telegram.">
 <meta property="og:title" content="Магическая помощь — мастер Фёдор">
-<meta property="og:description" content="Обряды и ритуалы на деньги, удачу, любовь, защиту, очищение. Энергетические практики. Консультация в Telegram @fedormagic">
+<meta property="og:description" content="Практическая помощь и поддержка: обряды, энергетические практики, восстановление сил. Присоединяйтесь к сообществу в Telegram.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🜲</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🕯️</text></svg>">
 <style>
 :root{
-  --gold:#d4af37;
-  --gold-dim:#a8892e;
-  --deep:#0b0714;
-  --deep2:#140c22;
-  --panel:#1a1130;
-  --panel2:#221743;
-  --text:#e8dcc8;
-  --muted:#b7a98c;
-  --accent:#a78bfa;
-  --violet:#7c3aed;
+  --bg:#f7f5f2;            /* тёплый светлый фон */
+  --bg-soft:#efece6;
+  --ink:#241f2b;           /* почти чёрный фиолетовый текст */
+  --ink-soft:#5b5470;      /* вторичный текст */
+  --accent:#6d4a8f;        /* приглушённый фиолетовый (магия, но спокойно) */
+  --accent-2:#a67c52;      /* тёплый янтарь для акцента CTA */
+  --accent-2-dark:#8a6238;
+  --card:#ffffff;
+  --line:#e5dfd6;
+  --gold-faint:#f2ead9;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{
-  font-family:'Georgia','Times New Roman',serif;
-  background:var(--deep);
-  color:var(--text);
-  line-height:1.65;
-  overflow-x:hidden;
+  font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.6;
 }
-/* Звёздный фон */
-.stars{position:fixed;inset:0;z-index:0;pointer-events:none;
-  background-image:
-    radial-gradient(1px 1px at 20% 30%,#fff,transparent),
-    radial-gradient(1px 1px at 40% 70%,#fff8,transparent),
-    radial-gradient(1.5px 1.5px at 60% 20%,#ffe9a8,transparent),
-    radial-gradient(1px 1px at 80% 55%,#fff,transparent),
-    radial-gradient(1.2px 1.2px at 30% 80%,#fff6,transparent),
-    radial-gradient(1px 1px at 75% 90%,#fff,transparent),
-    radial-gradient(1.4px 1.4px at 10% 60%,#dfc,transparent),
-    radial-gradient(1px 1px at 90% 10%,#fff9,transparent),
-    radial-gradient(1.2px 1.2px at 50% 45%,#fff,transparent);
-  background-size:100% 100%;
-  animation:twinkle 6s ease-in-out infinite;
-}
-@keyframes twinkle{0%,100%{opacity:.55}50%{opacity:1}}
-.wrap{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:0 24px}
-section{padding:72px 0}
-h1,h2,h3{font-weight:400;letter-spacing:.5px}
-h2{font-size:clamp(26px,4vw,38px);color:var(--gold);text-align:center;margin-bottom:14px;text-shadow:0 0 24px rgba(212,175,55,.25)}
-.orn{width:90px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto 26px}
-.lead{text-align:center;color:var(--muted);max-width:680px;margin:0 auto 40px;font-size:18px}
+img{max-width:100%;display:block}
+a{color:inherit}
 
-/* ===== Хидер ===== */
-header{position:relative;z-index:2;min-height:100vh;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:40px 16px}
-.magick{margin-bottom:-14px}
-.sun{display:inline-block;font-size:64px;line-height:1;transform-origin:center;
-  background:radial-gradient(circle,rgba(212,175,55,.9),rgba(212,175,55,0) 70%);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-  animation:rotate 28s linear infinite;}
-@keyframes rotate{to{transform:rotate(360deg)}}
-.crown{display:flex;gap:14px;justify-content:center;align-items:center;color:var(--gold);font-size:30px;margin-bottom:18px}
-.crown span{filter:drop-shadow(0 0 8px rgba(212,175,55,.6))}
-.hero-title{font-size:clamp(36px,7vw,66px);line-height:1.15;color:#fff;text-shadow:0 0 40px rgba(124,58,237,.5),0 0 12px rgba(212,175,55,.3)}
-.hero-title .hi{color:var(--gold);font-style:italic}
-.hero-sub{margin-top:22px;font-size:clamp(17px,2.6vw,21px);color:var(--muted);max-width:640px;margin-left:auto;margin-right:auto}
-.hero-tags{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
-.tag{border:1px solid var(--gold-dim);color:var(--gold);padding:7px 16px;border-radius:40px;font-size:14px;letter-spacing:.6px;background:rgba(212,175,55,.06)}
-.cta{display:inline-block;margin-top:40px;padding:17px 46px;font-size:19px;color:#0b0714;background:linear-gradient(135deg,var(--gold),#ffe9a8 45%,var(--gold));border-radius:50px;text-decoration:none;font-weight:700;letter-spacing:.5px;box-shadow:0 8px 34px rgba(212,175,55,.35);transition:transform .2s,box-shadow .2s}
-.cta:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(212,175,55,.5)}
-.scroll-hint{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font-size:13px;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
-.scroll-hint:after{content:'↓';display:block;margin-top:6px;font-size:20px;color:var(--gold);animation:float 1.8s infinite}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+.container{max-width:1080px;margin:0 auto;padding:0 22px}
 
-/* ===== Услуги ===== */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
-.card{background:linear-gradient(160deg,var(--panel),var(--deep2));border:1px solid rgba(212,175,55,.18);border-radius:16px;padding:30px 26px;transition:transform .25s,border-color .25s,box-shadow .25s;position:relative;overflow:hidden}
-.card:before{content:'';position:absolute;top:-40px;right:-40px;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle,rgba(124,58,237,.22),transparent 70%)}
-.card:hover{transform:translateY(-5px);border-color:rgba(212,175,55,.5);box-shadow:0 14px 40px rgba(0,0,0,.45)}
-.card .ic{font-size:40px;display:block;margin-bottom:14px}
-.card h3{color:var(--gold);font-size:21px;margin-bottom:10px}
-.card p{color:var(--muted);font-size:15.5px}
+/* ===== Хидер-навигация (минимальная) ===== */
+.nav{position:sticky;top:0;z-index:50;background:rgba(247,245,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1080px;margin:0 auto}
+.brand{font-weight:700;font-size:17px;letter-spacing:.2px}
+.brand .dot{color:var(--accent-2)}
+.brand small{display:block;font-weight:400;font-size:12px;color:var(--ink-soft);letter-spacing:1.5px;text-transform:uppercase}
+.nav-cta{background:var(--accent-2);color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:10px 18px;border-radius:30px;transition:background .2s}
+.nav-cta:hover{background:var(--accent-2-dark)}
 
-/* ===== Этапы ===== */
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;counter-reset:st}
-.step{background:var(--panel);border:1px solid rgba(212,175,55,.14);border-radius:14px;padding:24px;text-align:center;position:relative}
-.step:before{counter-increment:st;content:counter(st);position:absolute;top:-14px;left:50%;transform:translateX(-50%);width:30px;height:30px;border-radius:50%;background:var(--violet);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;box-shadow:0 0 18px rgba(124,58,237,.5)}
-.step h4{color:var(--gold);margin:8px 0 8px;font-size:17px}
-.step p{color:var(--muted);font-size:14.5px}
+/* ===== Hero ===== */
+.hero{padding:64px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);background:rgba(109,74,143,.08);border:1px solid rgba(109,74,143,.18);padding:6px 14px;border-radius:30px;margin-bottom:20px}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.12;font-weight:800;letter-spacing:-.5px}
+h1 .hl{color:var(--accent)}
+.hero-sub{margin-top:20px;font-size:clamp(16px,2vw,19px);color:var(--ink-soft);max-width:520px}
+.hero-cta-row{margin-top:30px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:700;border-radius:30px;transition:transform .15s,box-shadow .2s,background .2s}
+.btn-primary{background:var(--accent-2);color:#fff;font-size:17px;padding:15px 28px;box-shadow:0 8px 24px rgba(138,98,56,.28)}
+.btn-primary:hover{background:var(--accent-2-dark);transform:translateY(-1px)}
+.btn-secondary{background:var(--card);color:var(--ink);font-size:15px;padding:13px 22px;border:1px solid var(--line)}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
+.hero-trust{margin-top:22px;font-size:14px;color:var(--ink-soft);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.hero-trust .av{display:flex;margin-right:2px}
+.hero-trust .av span{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;border:2px solid var(--bg);margin-left:-8px}
+.hero-trust .av span:first-child{margin-left:0}
+.hero-visual{position:relative}
+.visual-card{background:linear-gradient(150deg,#2b2136,#4a3560);border-radius:20px;color:#f4edf7;padding:36px 30px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 60px rgba(36,31,43,.18);position:relative;overflow:hidden}
+.visual-card:before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(166,124,82,.35),transparent 70%)}
+.vc-top{display:flex;align-items:center;gap:12px;font-weight:600;font-size:15px}
+.vc-top .tf{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;font-size:20px}
+.vc-msg{font-size:19px;line-height:1.5;font-weight:500}
+.vc-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.vc-tags span{background:rgba(255,255,255,.12);border-radius:20px;padding:5px 12px;font-size:12.5px}
+.vc-foot{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:rgba(244,237,247,.75)}
+
+/* ===== Общие секции ===== */
+section{padding:60px 0}
+.section-head{max-width:640px;margin:0 auto 40px;text-align:center}
+.section-head .kicker{font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.section-head h2{font-size:clamp(26px,3.5vw,38px);font-weight:800;letter-spacing:-.4px}
+.section-head p{margin-top:14px;color:var(--ink-soft);font-size:16.5px}
+
+/* ===== Выгоды группы ===== */
+.benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.benefit{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 24px;transition:transform .2s,box-shadow .2s}
+.benefit:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(36,31,43,.08)}
+.benefit .ic{width:48px;height:48px;border-radius:12px;background:rgba(109,74,143,.1);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px}
+.benefit h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.benefit p{font-size:15px;color:var(--ink-soft)}
+
+/* ===== Для кого ===== */
+.forwho{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.for-item{background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:18px 20px;font-size:16px;display:flex;gap:12px;align-items:flex-start}
+.for-item .mark{color:var(--accent-2);font-weight:700;flex-shrink:0}
 
 /* ===== О мастере ===== */
-.about{display:grid;grid-template-columns:1fr 1.4fr;gap:36px;align-items:center}
-.about-photo{aspect-ratio:1/1.05;max-width:360px;width:100%;margin:0 auto;border-radius:50%;overflow:hidden;position:relative;
-  background:radial-gradient(circle at 30% 25%,#2d1b4e,#150c26 70%);border:2px solid rgba(212,175,55,.35);
-  box-shadow:0 0 70px rgba(124,58,237,.35)}
-.about-photo .moon{position:absolute;top:18%;right:22%;font-size:46px;color:var(--gold);opacity:.85;filter:drop-shadow(0 0 14px rgba(212,175,55,.7))}
-.about-photo .sigil{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:110px;color:rgba(212,175,55,.25)}
-.about-photo .name-plate{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#fff;font-size:20px;letter-spacing:2px;text-shadow:0 2px 12px #000}
-.about-text h3{color:var(--gold);font-size:26px;margin-bottom:12px}
-.about-text p{color:var(--muted);margin-bottom:14px;font-size:16px}
-.about-text .strong{color:var(--text)}
-.about-text ul{list-style:none;margin-top:8px}
-.about-text li{padding:7px 0;color:var(--muted);font-size:15.5px;border-bottom:1px dashed rgba(212,175,55,.15)}
-.about-text li b{color:var(--gold);font-weight:400}
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:40px;box-shadow:0 10px 30px rgba(36,31,43,.05)}
+.about-avatar{width:200px;height:200px;border-radius:50%;background:linear-gradient(145deg,#3a2c4d,#5a4178);display:flex;align-items:center;justify-content:center;color:#f4edf7;margin:0 auto}
+.about-avatar .mono{font-size:44px;font-weight:800;letter-spacing:2px}
+.about-avatar small{display:block;text-align:center;font-size:13px;color:rgba(244,237,247,.8);font-weight:400;letter-spacing:1px}
+.about h3{font-size:24px;font-weight:800;margin-bottom:12px}
+.about p{color:var(--ink-soft);font-size:16px;margin-bottom:12px}
+.about p strong{color:var(--ink)}
+.about ul{list-style:none;margin-top:14px;display:grid;gap:10px}
+.about li{display:flex;gap:10px;font-size:15.5px;color:var(--ink-soft)}
+.about li b{color:var(--accent-2);font-weight:700}
 
 /* ===== Отзывы ===== */
 .reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.rev{background:var(--panel);border:1px solid rgba(212,175,55,.14);border-radius:14px;padding:24px;position:relative}
-.rev:before{content:'“';position:absolute;top:4px;left:14px;font-size:60px;color:rgba(212,175,55,.25);font-family:Georgia;line-height:1}
-.rev p{color:var(--muted);font-size:15px;font-style:italic;margin-bottom:14px}
-.rev .who{color:var(--gold);font-size:14px}
-.rev .who:before{content:'— '}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;flex-direction:column}
+.rev .stars{color:var(--accent-2);letter-spacing:2px;font-size:15px;margin-bottom:12px}
+.rev p{font-size:15.5px;color:var(--ink-soft);flex:1}
+.rev .who{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-weight:700;font-size:14px}
+.rev .who small{display:block;font-weight:400;color:var(--ink-soft);margin-top:2px}
 
-/* ===== Свечи / практики ===== */
-.ritual{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.rit-item{background:linear-gradient(160deg,rgba(124,58,237,.14),var(--panel));border:1px solid rgba(167,139,250,.25);border-radius:14px;padding:24px;text-align:center}
-.rit-item .flame{display:block;font-size:34px;margin-bottom:10px;filter:drop-shadow(0 0 12px rgba(255,180,60,.6))}
-.rit-item h4{color:var(--accent);font-size:18px;margin-bottom:8px}
-.rit-item p{color:var(--muted);font-size:14.5px}
+/* ===== FAQ ===== */
+.faq{max-width:760px;margin:0 auto}
+.faq-item{border:1px solid var(--line);border-radius:14px;margin-bottom:12px;background:var(--card);overflow:hidden}
+.faq-item summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;font-size:16.5px;display:flex;justify-content:space-between;align-items:center}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:'+';font-size:24px;font-weight:400;color:var(--accent);transition:transform .2s}
+.faq-item[open] summary:after{transform:rotate(45deg)}
+.faq-item .faq-body{padding:0 22px 20px;color:var(--ink-soft);font-size:15.5px}
 
-/* ===== Предупреждение ===== */
-.note{background:rgba(167,139,250,.07);border:1px solid rgba(167,139,250,.25);border-radius:12px;padding:18px 22px;color:var(--muted);font-size:14px;max-width:760px;margin:40px auto 0;text-align:center}
-
-/* ===== Контакты ===== */
-.contact-panel{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid rgba(212,175,55,.25);border-radius:20px;padding:50px 30px;text-align:center;max-width:680px;margin:0 auto}
-.contact-panel .tg{font-size:52px}
-.contact-panel h3{color:var(--gold);font-size:28px;margin:14px 0 10px}
-.contact-panel p{color:var(--muted);margin-bottom:26px;font-size:16px}
-.cta-big{display:inline-block;padding:18px 48px;font-size:20px;color:#0b0714;background:linear-gradient(135deg,var(--gold),#ffe9a8 45%,var(--gold));border-radius:50px;text-decoration:none;font-weight:700;box-shadow:0 8px 34px rgba(212,175,55,.35);transition:transform .2s}
-.cta-big:hover{transform:translateY(-2px)}
-.contact-links{margin-top:22px;font-size:14px;color:var(--muted)}
-.contact-links a{color:var(--accent);text-decoration:none}
+/* ===== Финальный CTA ===== */
+.final{background:linear-gradient(150deg,#2b2136,#4a3560);border-radius:24px;color:#f4edf7;padding:56px 40px;text-align:center;position:relative;overflow:hidden;box-shadow:0 24px 60px rgba(36,31,43,.2)}
+.final:before{content:'';position:absolute;bottom:-80px;left:-60px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(166,124,82,.3),transparent 70%)}
+.final h2{font-size:clamp(26px,4vw,38px);font-weight:800;letter-spacing:-.4px}
+.final p{margin:16px auto 28px;max-width:520px;font-size:17px;color:rgba(244,237,247,.85)}
+.final .btn-primary{box-shadow:0 10px 30px rgba(138,98,56,.5)}
+.final .sub-hint{margin-top:16px;font-size:13.5px;color:rgba(244,237,247,.7)}
 
 /* ===== Футер ===== */
-footer{padding:36px 0;text-align:center;color:#6d5f4a;font-size:13.5px;border-top:1px solid rgba(212,175,55,.12);position:relative;z-index:1}
-footer .sep{margin:0 8px;color:var(--gold-dim)}
+footer{padding:34px 0 44px;border-top:1px solid var(--line);color:var(--ink-soft);font-size:14px}
+.foot-flex{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
+.foot-disc{margin-top:18px;font-size:12.5px;color:#8d869b;line-height:1.5}
+footer a{color:var(--accent);text-decoration:none}
 
-/* Адаптив */
+/* ===== Адаптив ===== */
 @media(max-width:760px){
-  .about{grid-template-columns:1fr}
-  .about-photo{max-width:280px}
-  section{padding:54px 0}
+  .hero{padding:44px 0 40px}
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .about{grid-template-columns:1fr;padding:28px;gap:26px}
+  section{padding:44px 0}
+  .nav-cta{display:none}
 }
-a.btn-tg{display:inline-flex;align-items:center;gap:10px}
 </style>
 </head>
 <body>
-<div class="stars"></div>
 
-<!-- ================= ХИДЕР ================= -->
-<header>
-  <div class="magick">
-    <div class="crown"><span>✦</span><span>🜲</span><span>✦</span></div>
+<!-- ===== Навигация ===== -->
+<div class="nav">
+  <div class="nav-inner">
+    <div class="brand">Магическая помощь<span class="dot">.</span>
+      <small>мастер Фёдор</small>
+    </div>
+    <a class="nav-cta" href="https://t.me/+wRq61Q4JwfNjMGYy">Присоединиться</a>
   </div>
-  <h1 class="hero-title">Магическая <span class="hi">помощь</span></h1>
-  <p class="hero-sub">Обряды и ритуалы на деньги, удачу, любовь, защиту и очищение.
-  Энергетические практики, восстановление сил. Мастер Фёдор.</p>
-  <div class="hero-tags">
-    <span class="tag">Ритуалы на деньги</span>
-    <span class="tag">На любовь и удачу</span>
-    <span class="tag">Защита и очищение</span>
-    <span class="tag">Энергетические практики</span>
-    <span class="tag">Работа со свечами</span>
+</div>
+
+<!-- ===== Hero ===== -->
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Практическая помощь и поддержка</span>
+      <h1>Поддержка в трудной ситуации — <span class="hl">бережно и конфиденциально</span></h1>
+      <p class="hero-sub">Обряды, энергетические практики и восстановление сил. Бесплатно вступайте в сообщество «Магическая помощь», где мастер Фёдор отвечает на вопросы и делится практиками.</p>
+      <div class="hero-cta-row">
+        <a class="btn btn-primary" href="https://t.me/+wRq61Q4JwfNjMGYy">Присоединиться к группе →</a>
+        <a class="btn btn-secondary" href="https://t.me/fedormagic">Написать мастеру @fedormagic</a>
+      </div>
+      <div class="hero-trust">
+        <div class="av">
+          <span>Е</span><span>С</span><span>А</span><span>+</span>
+        </div>
+        <span>Тёплое сообщество • личные консультации • без навязывания</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="visual-card">
+        <div class="vc-top"><span class="tf">🕯️</span><span>Магическая помощь</span></div>
+        <div class="vc-msg">«В группе делятся опытом и получают ответы на вопросы. Здесь можно спросить о том, что волнует, — спокойно и без осуждения».</div>
+        <div class="vc-tags">
+          <span>деньги и достаток</span><span>отношения</span><span>защита</span><span>очищение</span>
+        </div>
+        <div class="vc-foot"><span>Мастер Фёдор</span><span>@fedormagic</span></div>
+      </div>
+    </div>
   </div>
-  <a class="cta" href="https://t.me/fedormagic">Написать мастеру в Telegram</a>
-  <div class="scroll-hint">Листайте</div>
 </header>
 
-<!-- ================= УСЛУГИ ================= -->
-<section id="services">
-  <div class="wrap">
-    <h2>Обряды и ритуалы</h2>
-    <div class="orn"></div>
-    <p class="lead">Провожу обряды и ритуалы, направленные на решение конкретной жизненной задачи — бережно, уважительно и конфиденциально.</p>
-    <div class="cards">
-      <div class="card"><span class="ic">💰</span><h3>На деньги и достаток</h3><p>Ритуалы на привлечение финансов, открытие денежного потока, удачные сделки и стабильный доход.</p></div>
-      <div class="card"><span class="ic">💛</span><h3>На любовь и отношения</h3><p>Обряды на гармонию в отношениях, укрепление чувств, примирение и встречу своей второй половины.</p></div>
-      <div class="card"><span class="ic">🍀</span><h3>На удачу и успех</h3><p>Обряды на везение, удачное стечение обстоятельств, открытие дорог и новые возможности.</p></div>
-      <div class="card"><span class="ic">🛡️</span><h3>Защита</h3><p>Установка защиты от недоброжелателей, сглаза и негативных воздействий. Сохранение энергии и границ.</p></div>
-      <div class="card"><span class="ic">🕯️</span><h3>Очищение</h3><p>Очищение дома, пространства и ауры от накопленного негатива. Снятие тяжести, усталости и нехороших программ.</p></div>
-      <div class="card"><span class="ic">🌙</span><h3>Диагностика</h3><p>Предварительная диагностика ситуации, чтобы понять, что происходит и какой практический шаг нужен.</p></div>
+<!-- ===== Выгоды группы ===== -->
+<section id="benefits">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Что вы получите</div>
+      <h2>Зачем вступать в сообщество</h2>
+      <p>Практическая польза и поддержка — без обещаний «всё решить за вас».</p>
+    </div>
+    <div class="benefits">
+      <div class="benefit"><div class="ic">💬</div><h3>Ответы на вопросы</h3><p>Мастер Фёдор отвечает на вопросы участников и помогает разобраться в ситуации.</p></div>
+      <div class="benefit"><div class="ic">📖</div><h3>Практики и ритуалы</h3><p>Пошаговые практики, обряды и ритуалы — с пояснениями, как и для чего их применять.</p></div>
+      <div class="benefit"><div class="ic">🛟</div><h3>Поддержка сообщества</h3><p>Люди со схожими ситуациями, которые понимают и не осуждают.</p></div>
+      <div class="benefit"><div class="ic">🔒</div><h3>Конфиденциальность</h3><p>Вопросы и обсуждения остаются в группе — к любому обращению относимся уважительно.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ================= ПРАКТИКИ ================= -->
-<section id="practices">
-  <div class="wrap">
-    <h2>Энергетические практики</h2>
-    <div class="orn"></div>
-    <p class="lead">Работа с энергией: чистки, восстановление, медитации и практики со свечами.</p>
-    <div class="ritual">
-      <div class="rit-item"><span class="flame">🕯️</span><h4>Практики со свечами</h4><p>Восковые и ароматические свечи для намерений, очищения пространства и настройки на нужный результат.</p></div>
-      <div class="rit-item"><span class="flame">🌀</span><h4>Энергетическая чистка</h4><p>Последовательная работа по снятию чужого напряжения и восстановлению собственной энергетики.</p></div>
-      <div class="rit-item"><span class="flame">🧘</span><h4>Медитации</h4><p>Направленные медитации на спокойствие, концентрацию, уверенность и восстановление ресурса.</p></div>
-      <div class="rit-item"><span class="flame">🌿</span><h4>Восстановление энергетики</h4><p>Практики возвращения сил после стресса, тяжёлых периодов и эмоционального истощения.</p></div>
+<!-- ===== Для кого ===== -->
+<section id="forwhom" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Для кого</div>
+      <h2>Кому будет полезно</h2>
+    </div>
+    <div class="forwho">
+      <div class="for-item"><span class="mark">✓</span>Кому нужна поддержка в непростой жизненный период и хочется понять, что делать.</div>
+      <div class="for-item"><span class="mark">✓</span>Кто ищет практики на деньги, удачу, отношения, защиту и очищение пространства.</div>
+      <div class="for-item"><span class="mark">✓</span>Кто чувствует упадок сил, тревогу и хочет восстановить внутренний баланс.</div>
+      <div class="for-item"><span class="mark">✓</span>Кому важно, чтобы работали бережно, честно и без запугивания.</div>
     </div>
   </div>
 </section>
 
-<!-- ================= ЭТАПЫ ================= -->
-<section id="how">
-  <div class="wrap">
-    <h2>Как проходит работа</h2>
-    <div class="orn"></div>
-    <div class="steps" style="margin-top:34px">
-      <div class="step"><h4>Обращение</h4><p>Напишите мне в Telegram — кратко опишите, что происходит и чего вы хотите.</p></div>
-      <div class="step"><h4>Диагностика</h4><p>Обсуждаем ситуацию, я определяю, нужен ли ритуал или достаточно энергетической практики.</p></div>
-      <div class="step"><h4>Проведение</h4><p>Провожу обряд или практику в согласованное время, держу вас в курсе.</p></div>
-      <div class="step"><h4>Рекомендации</h4><p>Даю рекомендации по закреплению результата и дальнейшим шагам.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= О МАСТЕРЕ ================= -->
+<!-- ===== О мастере ===== -->
 <section id="about">
-  <div class="wrap">
-    <h2>О мастере</h2>
-    <div class="orn"></div>
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">О мастере</div>
+      <h2>Мастер Фёдор</h2>
+    </div>
     <div class="about">
-      <div class="about-photo">
-        <span class="moon">☾</span>
-        <span class="sigil">🜲</span>
-        <span class="name-plate">ФЁДОР</span>
-      </div>
-      <div class="about-text">
-        <h3>Фёдор — практик с многолетним опытом</h3>
-        <p>Занимаюсь энергетическими практиками и обрядовой работой много лет. Помогаю людям разобраться в сложных жизненных ситуациях, восстановить силы и энергию, наладить отношения и достаток.</p>
-        <p class="strong">К каждому обращению подхожу индивидуально и бережно. Работаю конфиденциально, безопасно и уважительно.</p>
+      <div class="about-avatar"><div><div class="mono">ФЁДОР</div><small>маг-практик</small></div></div>
+      <div>
+        <h3>Практическая помощь без мистики ради мистики</h3>
+        <p>Занимаюсь обрядовой и энергетической работой много лет. Моя задача — <strong>помочь людям разобраться</strong> в сложной ситуации, восстановить силы и наладить жизнь, а не напугать или запутать.</p>
+        <p>К каждому обращению подхожу индивидуально и бережно. Честно говорю, что возможно, а что нет, и не навязываю ненужного.</p>
         <ul>
-          <li><b>✓</b> Честная диагностика — без запугивания и нагнетания</li>
-          <li><b>✓</b> Прозрачные условия — что делаю и как</li>
-          <li><b>✓</b> Бережная работа — без жёстких вмешательств</li>
-          <li><b>✓</b> Рекомендации после практики</li>
+          <li><b>✓</b>Честная диагностика — без запугивания и нагнетания</li>
+          <li><b>✓</b>Прозрачные условия — объясняю, что делаю и как</li>
+          <li><b>✓</b>Бережная работа — без жёстких вмешательств</li>
+          <li><b>✓</b>Рекомендации после практики для закрепления результата</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= ОТЗЫВЫ ================= -->
+<!-- ===== Отзывы ===== -->
 <section id="reviews">
-  <div class="wrap">
-    <h2>Отзывы</h2>
-    <div class="orn"></div>
-    <div class="reviews">
-      <div class="rev"><p>Обращалась с ситуацией на работе — провёл обряд на удачу и очищение. Спустя неделю всё наладилось, ощущение тяжёлого фона ушло.</p><span class="who">Елена</span></div>
-      <div class="rev"><p>Долго не мог восстановиться после тяжёлого периода. Восстановление энергетики и простые практики вернули силы и спокойствие. Рекомендую.</p><span class="who">Сергей</span></div>
-      <div class="rev"><p>Делал ритуал на открытие дорог перед важными переговорами. Всё прошло удачно. Отдельное спасибо за бережный подход.</p><span class="who">Александр</span></div>
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Отзывы</div>
+      <h2>Что говорят участники</h2>
+      <p>Конкретные истории — как в таких случаях.</p>
     </div>
-  </div>
-</section>
-
-<!-- ================= КОНТАКТЫ ================= -->
-<section id="contacts">
-  <div class="wrap">
-    <h2>Свяжитесь со мной</h2>
-    <div class="orn"></div>
-    <div class="contact-panel">
-      <div class="tg">✉️</div>
-      <h3>Напишите в Telegram</h3>
-      <p>Расскажите о своей ситуации — помогу разобраться и подберу подходящую практику.</p>
-      <a class="cta-big" href="https://t.me/fedormagic">@fedormagic</a>
-      <p style="margin-top:18px;font-size:15px;color:var(--muted)">Присоединяйтесь к группе <b style="color:var(--gold)">«Магическая помощь»</b> — обсуждения, вопросы, полезные практики:</p>
-      <a class="cta" style="margin-top:14px" href="https://t.me/+wRq61Q4JwfNjMGYy">💬 Открыть группу в Telegram</a>
-      <div class="contact-links">
-        <span>Telegram: <a href="https://t.me/fedormagic">@fedormagic</a></span><span class="sep">•</span>
-        <span>Мастер Фёдор — магическая помощь</span>
+    <div class="reviews">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>Была сложная ситуация на работе, ощущение, что всё валится из рук. Мастер провёл обряд на удачу и подсказал практики очищения. Через пару недель стало заметно легче, дела наладились.</p>
+        <div class="who">Елена<small>ситуация на работе</small></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>Долго не мог восстановиться после тяжёлого периода. Восстановление энергетики и простые практики из группы вернули силы и спокойствие. Спасибо за бережный подход.</p>
+        <div class="who">Сергей<small>упадок сил</small></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>Делал ритуал на открытие дорог перед важными переговорами. Всё прошло удачно. Отдельное спасибо, что объяснили, как правильно закрепить результат.</p>
+        <div class="who">Александр<small>перед важными делами</small></div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ===== FAQ ===== -->
+<section id="faq" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Вопросы и ответы</div>
+      <h2>Частые вопросы</h2>
+    </div>
+    <div class="faq">
+      <details class="faq-item"><summary>Это безопасно?</summary><div class="faq-body">Работа проводится бережно, без жёстких вмешательств и без воздействия против чьей-либо воли. Перед началом всегда объясняю, что именно делаю и для чего, и не навязываю лишнего.</div></details>
+      <details class="faq-item"><summary>Сколько это стоит?</summary><div class="faq-body">Группа бесплатна для вступления. Стоимость личной консультации или обряда обсуждается индивидуально в Telegram после описания вашей ситуации — прозрачно и заранее.</div></details>
+      <details class="faq-item"><summary>Подойдёт ли это мне?</summary><div class="faq-body">Лучше всего написать мастеру и кратко описать ситуацию. По итогам диагностики он честно скажет, что может помочь, а что — нет. Принуждать вас никто не будет.</div></details>
+      <details class="faq-item"><summary>Это конфиденциально?</summary><div class="faq-body">Да. Вопросы и личные данные обрабатываются конфиденциально. Диалоги с мастером не разглашаются, а переписка в общей группе остаётся в её пределах.</div></details>
+      <details class="faq-item"><summary>Это медицина или гарантированный результат?</summary><div class="faq-body">Нет. Это эзотерическая и духовная помощь, которая не заменяет квалифицированной медицинской, психологической или юридической помощи. Мы не даём медицинских диагнозов и не гарантируем результат — работаем как поддержка и практическое сопровождение.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Финальный CTA ===== -->
+<section id="join">
+  <div class="container">
+    <div class="final">
+      <h2>Присоединяйтесь к сообществу «Магическая помощь»</h2>
+      <p>Задайте вопрос, узнайте о практиках и получите поддержку. Начните с бесплатного вступления в группу.</p>
+      <div>
+        <a class="btn btn-primary" href="https://t.me/+wRq61Q4JwfNjMGYy">Открыть группу в Telegram →</a>
+      </div>
+      <div class="sub-hint" style="margin-top:24px">Или напишите мастеру лично: <a href="https://t.me/fedormagic" style="color:#f4edf7;text-decoration:underline">@fedormagic</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Футер ===== -->
 <footer>
-  <p>Магическая помощь • Мастер Фёдор • Telegram <a href="https://t.me/fedormagic" style="color:var(--gold-dim)">@fedormagic</a></p>
-  <p style="margin-top:8px">Помощь в гармонизации жизни и энергии. Уважительное и конфиденциальное сопровождение.</p>
+  <div class="container">
+    <div class="foot-flex">
+      <span>Магическая помощь • мастер Фёдор • <a href="https://t.me/fedormagic">@fedormagic</a></span>
+      <span><a href="https://t.me/+wRq61Q4JwfNjMGYy">Группа в Telegram</a></span>
+    </div>
+    <p class="foot-disc">Дисклеймер: сайт носит информационный характер и не является публичной офертой. Обряды и энергетические практики относятся к эзотерическим духовным практикам и не заменяют медицинской, психологической или юридической помощи. Результаты индивидуальны и не гарантируются.</p>
+  </div>
 </footer>
 
-<script>
-// Плавное появление блоков
-const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.style.opacity=1;e.target.style.transform='translateY(0)'}})},{threshold:.12});
-document.querySelectorAll('.card,.step,.rit-item,.rev').forEach(el=>{el.style.opacity=0;el.style.transform='translateY(24px)';el.style.transition='opacity .7s ease, transform .7s ease';io.observe(el)});
-</script>
 </body>
 </html>

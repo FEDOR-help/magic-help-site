@@ -8,7 +8,7 @@ GIT = r"D:\ContentFactory\portable\git_full\bin\git.exe"
 if not os.path.exists(GIT):
     GIT = "git"
 SITE_DIR = r"D:\13"
-REPO = "sasha131080-cloud/magic-help-site"
+REPO = "FEDOR-help/magic-help-site"
 TOR_PROXY = "socks5://127.0.0.1:9050"
 
 
@@ -56,7 +56,7 @@ def main():
         st, res = api("https://api.github.com/user/repos", token, "POST", {
             "name": "magic-help-site",
             "description": "Магическая помощь — сайт-визитка (обряды, ритуалы, энергетические практики)",
-            "homepage": "https://sasha131080-cloud.github.io/magic-help-site/",
+            "homepage": "https://FEDOR-help.github.io/magic-help-site/",
             "public": True,
             "has_wiki": False,
             "has_issues": False,
