@@ -4,3 +4,7 @@ framer.txt
 involve.txt
 *.tmp
 
+# Скрипты генерации (локальные инструменты, не нужны на сайте)
+gem_bg_magic.py
+gen_bg_magic.py
+
