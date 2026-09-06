@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fedor-help.github.io/magic-help-site/sitemap.xml
