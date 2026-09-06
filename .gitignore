@@ -8,3 +8,7 @@ involve.txt
 gem_bg_magic.py
 gen_bg_magic.py
 
+# Инструмент переименования шрифта
+fonts/rename_font.py
+fonts/RuslanDisplay-Regular.ttf
+

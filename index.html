@@ -10,6 +10,11 @@
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🕯️</text></svg>">
 <style>
+@font-face{
+  font-family:'Fedor';
+  src:url('fonts/Fedor.woff2') format('woff2');
+  font-weight:400;font-style:normal;font-display:swap;
+}
 :root{
   --bg:#f7f5f2;            /* тёплый светлый фон */
   --bg-soft:#efece6;
@@ -38,7 +43,7 @@ a{color:inherit}
 /* ===== Хидер-навигация (минимальная) ===== */
 .nav{position:sticky;top:0;z-index:50;background:rgba(247,245,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1080px;margin:0 auto}
-.brand{font-weight:700;font-size:17px;letter-spacing:.2px}
+.brand{font-family:'Fedor','Segoe UI',serif;font-weight:400;font-size:22px;letter-spacing:.5px}
 .brand .dot{color:var(--accent-2)}
 .brand small{display:block;font-weight:400;font-size:12px;color:var(--ink-soft);letter-spacing:1.5px;text-transform:uppercase}
 .nav-cta{background:var(--accent-2);color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:10px 18px;border-radius:30px;transition:background .2s}
@@ -49,7 +54,7 @@ a{color:inherit}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
 .hero-grid>:not(.hero-visual){background:rgba(247,245,242,.72);padding:26px 28px;border-radius:22px;backdrop-filter:blur(2px)}
 .eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);background:rgba(109,74,143,.08);border:1px solid rgba(109,74,143,.18);padding:6px 14px;border-radius:30px;margin-bottom:20px}
-h1{font-size:clamp(32px,5vw,52px);line-height:1.12;font-weight:800;letter-spacing:-.5px}
+h1{font-family:'Fedor','Segoe UI',serif;font-size:clamp(34px,5.5vw,56px);line-height:1.2;font-weight:400;letter-spacing:.4px}
 h1 .hl{color:var(--accent)}
 .hero-sub{margin-top:20px;font-size:clamp(16px,2vw,19px);color:var(--ink-soft);max-width:520px}
 .hero-cta-row{margin-top:30px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
@@ -75,8 +80,8 @@ h1 .hl{color:var(--accent)}
 /* ===== Общие секции ===== */
 section{padding:60px 0}
 .section-head{max-width:640px;margin:0 auto 40px;text-align:center;background:rgba(247,245,242,.72);padding:18px 26px;border-radius:20px;backdrop-filter:blur(2px)}
-.section-head .kicker{font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
-.section-head h2{font-size:clamp(26px,3.5vw,38px);font-weight:800;letter-spacing:-.4px}
+.section-head .kicker{font-family:'Fedor','Segoe UI',serif;font-size:15px;font-weight:400;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.section-head h2{font-family:'Fedor','Segoe UI',serif;font-size:clamp(28px,4vw,42px);font-weight:400;letter-spacing:.4px}
 .section-head p{margin-top:14px;color:var(--ink-soft);font-size:16.5px}
 
 @media(min-width:761px){ #forwhom{background:rgba(247,245,242,.82)} }
@@ -86,7 +91,7 @@ section{padding:60px 0}
 .benefit{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 24px;transition:transform .2s,box-shadow .2s}
 .benefit:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(36,31,43,.08)}
 .benefit .ic{width:48px;height:48px;border-radius:12px;background:rgba(109,74,143,.1);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px}
-.benefit h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.benefit h3{font-family:'Fedor','Segoe UI',serif;font-size:21px;font-weight:400;letter-spacing:.3px;margin-bottom:8px}
 .benefit p{font-size:15px;color:var(--ink-soft)}
 
 /* ===== Для кого ===== */
@@ -97,9 +102,9 @@ section{padding:60px 0}
 /* ===== О мастере ===== */
 .about{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:40px;box-shadow:0 10px 30px rgba(36,31,43,.05)}
 .about-avatar{width:200px;height:200px;border-radius:50%;background:linear-gradient(145deg,#3a2c4d,#5a4178);display:flex;align-items:center;justify-content:center;color:#f4edf7;margin:0 auto}
-.about-avatar .mono{font-size:44px;font-weight:800;letter-spacing:2px}
+.about-avatar .mono{font-family:'Fedor','Segoe UI',serif;font-size:44px;font-weight:400;letter-spacing:2px}
 .about-avatar small{display:block;text-align:center;font-size:13px;color:rgba(244,237,247,.8);font-weight:400;letter-spacing:1px}
-.about h3{font-size:24px;font-weight:800;margin-bottom:12px}
+.about h3{font-family:'Fedor','Segoe UI',serif;font-size:28px;font-weight:400;letter-spacing:.3px;margin-bottom:12px}
 .about p{color:var(--ink-soft);font-size:16px;margin-bottom:12px}
 .about p strong{color:var(--ink)}
 .about ul{list-style:none;margin-top:14px;display:grid;gap:10px}
@@ -126,7 +131,7 @@ section{padding:60px 0}
 /* ===== Финальный CTA ===== */
 .final{background:linear-gradient(150deg,#2b2136,#4a3560);border-radius:24px;color:#f4edf7;padding:56px 40px;text-align:center;position:relative;overflow:hidden;box-shadow:0 24px 60px rgba(36,31,43,.2)}
 .final:before{content:'';position:absolute;bottom:-80px;left:-60px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(166,124,82,.3),transparent 70%)}
-.final h2{font-size:clamp(26px,4vw,38px);font-weight:800;letter-spacing:-.4px}
+.final h2{font-family:'Fedor','Segoe UI',serif;font-size:clamp(30px,4.5vw,42px);font-weight:400;letter-spacing:.4px}
 .final p{margin:16px auto 28px;max-width:520px;font-size:17px;color:rgba(244,237,247,.85)}
 .final .btn-primary{box-shadow:0 10px 30px rgba(138,98,56,.5)}
 .final .sub-hint{margin-top:16px;font-size:13.5px;color:rgba(244,237,247,.7)}
