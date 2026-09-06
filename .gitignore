@@ -12,3 +12,9 @@ gen_bg_magic.py
 fonts/rename_font.py
 fonts/RuslanDisplay-Regular.ttf
 
+# Старый генератор и черновики шрифта (не публикуем)
+fonts/build_fedor.py
+fonts/preview_new_fedor.png
+fonts/out/
+fonts/candidates/
+
