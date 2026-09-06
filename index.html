@@ -28,6 +28,16 @@ body{
   font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
   background:var(--bg);color:var(--ink);line-height:1.6;
 }
+body:before{
+  content:'';position:fixed;inset:0;z-index:-1;
+  background:url('images/bg_magic.jpg') center/cover no-repeat fixed;
+  opacity:.10;pointer-events:none;
+}
+body:after{
+  content:'';position:fixed;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(247,245,242,.96),rgba(247,245,242,.55) 40%,rgba(247,245,242,.92));
+  pointer-events:none;
+}
 img{max-width:100%;display:block}
 a{color:inherit}
 
