@@ -134,6 +134,10 @@ section{padding:60px 0}
 .final h2{font-family:'Fedor','Segoe UI',serif;font-size:clamp(30px,4.5vw,42px);font-weight:400;letter-spacing:.4px}
 .final p{margin:16px auto 28px;max-width:520px;font-size:17px;color:rgba(244,237,247,.85)}
 .final .btn-primary{box-shadow:0 10px 30px rgba(138,98,56,.5)}
+.qr-card{display:inline-flex;flex-direction:column;align-items:center;gap:10px;margin-top:26px;background:#fdfcfa;border-radius:20px;padding:14px 16px;text-decoration:none;transition:transform .15s,box-shadow .2s}
+.qr-card img{border-radius:8px}
+.qr-card span{font-size:13px;color:#4a3560;font-weight:600}
+.qr-card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.25)}
 .final .sub-hint{margin-top:16px;font-size:13.5px;color:rgba(244,237,247,.7)}
 
 /* ===== Футер ===== */
@@ -307,6 +311,10 @@ footer a{color:var(--accent);text-decoration:none}
       <div>
         <a class="btn btn-primary" href="https://t.me/+wRq61Q4JwfNjMGYy">Открыть группу в Telegram →</a>
       </div>
+      <a class="qr-card" href="https://t.me/+wRq61Q4JwfNjMGYy" title="Открыть группу в Telegram">
+        <img src="images/qr_group.png" alt="QR-код группы в Telegram" width="180" height="180">
+        <span>Наведите камеру, чтобы открыть группу</span>
+      </a>
       <div class="sub-hint" style="margin-top:24px">Или напишите мастеру лично: <a href="https://t.me/fedormagic" style="color:#f4edf7;text-decoration:underline">@fedormagic</a></div>
     </div>
   </div>
