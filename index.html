@@ -26,17 +26,9 @@
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{
   font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
-  background:var(--bg);color:var(--ink);line-height:1.6;
-}
-body:before{
-  content:'';position:fixed;inset:0;z-index:-1;
-  background:url('images/bg_magic.jpg') center/cover no-repeat fixed;
-  opacity:1;pointer-events:none;
-}
-body:after{
-  content:'';position:fixed;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(247,245,242,.85),rgba(247,245,242,.35) 40%,rgba(247,245,242,.85));
-  pointer-events:none;
+  background:#12101a url('images/bg_magic.jpg') center/cover no-repeat fixed;
+  background-blend-mode:normal;
+  color:var(--ink);line-height:1.6;
 }
 img{max-width:100%;display:block}
 a{color:inherit}
@@ -55,6 +47,7 @@ a{color:inherit}
 /* ===== Hero ===== */
 .hero{padding:64px 0 56px}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero-grid>:not(.hero-visual){background:rgba(247,245,242,.72);padding:26px 28px;border-radius:22px;backdrop-filter:blur(2px)}
 .eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);background:rgba(109,74,143,.08);border:1px solid rgba(109,74,143,.18);padding:6px 14px;border-radius:30px;margin-bottom:20px}
 h1{font-size:clamp(32px,5vw,52px);line-height:1.12;font-weight:800;letter-spacing:-.5px}
 h1 .hl{color:var(--accent)}
@@ -81,10 +74,12 @@ h1 .hl{color:var(--accent)}
 
 /* ===== Общие секции ===== */
 section{padding:60px 0}
-.section-head{max-width:640px;margin:0 auto 40px;text-align:center}
+.section-head{max-width:640px;margin:0 auto 40px;text-align:center;background:rgba(247,245,242,.72);padding:18px 26px;border-radius:20px;backdrop-filter:blur(2px)}
 .section-head .kicker{font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
 .section-head h2{font-size:clamp(26px,3.5vw,38px);font-weight:800;letter-spacing:-.4px}
 .section-head p{margin-top:14px;color:var(--ink-soft);font-size:16.5px}
+
+@media(min-width:761px){ #forwhom{background:rgba(247,245,242,.82)} }
 
 /* ===== Выгоды группы ===== */
 .benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
