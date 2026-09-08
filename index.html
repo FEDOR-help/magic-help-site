@@ -163,6 +163,14 @@ section{padding:60px 0}
 .for-item{background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:18px 20px;font-size:16px;display:flex;gap:12px;align-items:flex-start}
 .for-item .mark{color:var(--accent-2);font-weight:700;flex-shrink:0}
 
+/* ===== Практики и обряды ===== */
+.practices{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.practice{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;text-decoration:none;display:flex;gap:14px;align-items:center;transition:transform .2s,box-shadow .2s,border-color .2s}
+.practice:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(36,31,43,.09);border-color:var(--accent)}
+.practice .pic{width:46px;height:46px;border-radius:12px;background:rgba(109,74,143,.1);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.practice .ptxt b{display:block;font-size:15.5px;color:var(--ink)}
+.practice .ptxt span{font-size:12.5px;color:var(--ink-soft)}
+
 /* ===== О мастере ===== */
 .about{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:40px;box-shadow:0 10px 30px rgba(36,31,43,.05)}
 .about-avatar{width:200px;height:200px;border-radius:50%;background:linear-gradient(145deg,#3a2c4d,#5a4178);display:flex;align-items:center;justify-content:center;color:#f4edf7;margin:0 auto}
@@ -316,6 +324,34 @@ footer a{color:var(--accent);text-decoration:none}
   </div>
 </section>
 
+<!-- ===== Практики и обряды ===== -->
+<section id="practices" style="background:var(--bg)" >
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Практики и обряды</div>
+      <h2>Что можно сделать</h2>
+      <p>Пошаговые описания практик, обрядов и ритуалов — с пояснениями, как и для чего их применять.</p>
+    </div>
+    <div class="practices">
+      <a class="practice" href="ochishchenie-doma.html"><div class="pic">🏠</div><div class="ptxt"><b>Очищение дома</b><span>от накопленного негатива</span></div></a>
+      <a class="practice" href="ochishchenie-solyu.html"><div class="pic">🧂</div><div class="ptxt"><b>Очищение солью</b><span>простая практика для пространства и тела</span></div></a>
+      <a class="practice" href="ochishchenie-vodoy.html"><div class="pic">💧</div><div class="ptxt"><b>Очищение водой</b><span>мягкая практика восстановления</span></div></a>
+      <a class="practice" href="chistka-aukry.html"><div class="pic">🕯️</div><div class="ptxt"><b>Чистка ауры</b><span>возвращение лёгкости и спокойствия</span></div></a>
+      <a class="practice" href="snyatie-sglaza.html"><div class="pic">👁️</div><div class="ptxt"><b>Снятие сглаза</b><span>как понять и что делать</span></div></a>
+      <a class="practice" href="zashchita-ot-negativa.html"><div class="pic">🛡️</div><div class="ptxt"><b>Защита от негатива</b><span>постоянная защита для дома и себя</span></div></a>
+      <a class="practice" href="talismany-i-amulety.html"><div class="pic">🔮</div><div class="ptxt"><b>Талисманы и амулеты</b><span>как выбрать и носить правильно</span></div></a>
+      <a class="practice" href="denezhnyy-obryad.html"><div class="pic">💰</div><div class="ptxt"><b>Денежный обряд</b><span>на достаток и стабильность</span></div></a>
+      <a class="practice" href="ritual-na-dengi-v-polnolunie.html"><div class="pic">🌕</div><div class="ptxt"><b>Ритуал на полнолуние</b><span>для денег, исполнения желаний, очищения</span></div></a>
+      <a class="practice" href="zagovor-na-dengi.html"><div class="pic">✨</div><div class="ptxt"><b>Заговор на деньги</b><span>тексты и правила работы</span></div></a>
+      <a class="practice" href="priemety-pro-dengi.html"><div class="pic">🍀</div><div class="ptxt"><b>Приметы про деньги</b><span>что приближает достаток, а что отталкивает</span></div></a>
+      <a class="practice" href="priemety-na-udachu.html"><div class="pic">🌟</div><div class="ptxt"><b>Приметы на удачу</b><span>народные приметы и их смысл</span></div></a>
+      <a class="practice" href="obryad-na-lubov.html"><div class="pic">❤️</div><div class="ptxt"><b>Любовь и отношения</b><span>гармония, примирение, близость</span></div></a>
+      <a class="practice" href="ritual-dlya-nachala-del.html"><div class="pic">🚀</div><div class="ptxt"><b>Ритуал перед делом</b><span>чтобы начинания шли легче</span></div></a>
+      <a class="practice" href="vosstanovlenie-sil.html"><div class="pic">🌿</div><div class="ptxt"><b>Восстановление сил</b><span>после тяжёлого периода и упадка энергии</span></div></a>
+    </div>
+  </div>
+</section>
+
 <!-- ===== О мастере ===== -->
 <section id="about">
   <div class="container">
@@ -410,14 +446,21 @@ footer a{color:var(--accent);text-decoration:none}
       <span>Магическая помощь • мастер Фёдор • <a href="https://t.me/fedormagic">@fedormagic</a></span>
       <span><a href="https://t.me/+wRq61Q4JwfNjMGYy">Группа в Telegram</a></span>
     </div>
-    <div class="foot-links" style="margin-top:14px;font-size:12.5px">
-      <a href="priemety-na-udachu.html">Приметы на удачу</a> •
+    <div class="foot-links" style="margin-top:14px;font-size:12.5px;line-height:2">
       <a href="ochishchenie-doma.html">Очищение дома</a> •
-      <a href="denezhnyy-obryad.html">Денежный обряд</a> •
-      <a href="obryad-na-lubov.html">Любовь и отношения</a> •
-      <a href="zashchita-ot-negativa.html">Защита от негатива</a> •
+      <a href="ochishchenie-solyu.html">Очищение солью</a> •
+      <a href="ochishchenie-vodoy.html">Очищение водой</a> •
+      <a href="chistka-aukry.html">Чистка ауры</a> •
       <a href="snyatie-sglaza.html">Снятие сглаза</a> •
-      <a href="talismany-i-amulety.html">Талисманы</a> •
+      <a href="zashchita-ot-negativa.html">Защита от негатива</a> •
+      <a href="talismany-i-amulety.html">Талисманы и амулеты</a> •
+      <a href="denezhnyy-obryad.html">Денежный обряд</a> •
+      <a href="ritual-na-dengi-v-polnolunie.html">Ритуал на полнолуние</a> •
+      <a href="zagovor-na-dengi.html">Заговор на деньги</a> •
+      <a href="priemety-pro-dengi.html">Приметы про деньги</a> •
+      <a href="priemety-na-udachu.html">Приметы на удачу</a> •
+      <a href="obryad-na-lubov.html">Любовь и отношения</a> •
+      <a href="ritual-dlya-nachala-del.html">Ритуал перед делом</a> •
       <a href="vosstanovlenie-sil.html">Восстановление сил</a>
     </div>
     <p class="foot-disc">Дисклеймер: сайт носит информационный характер и не является публичной офертой. Обряды и энергетические практики относятся к эзотерическим духовным практикам и не заменяют медицинской, психологической или юридической помощи. Результаты индивидуальны и не гарантируются.</p>
