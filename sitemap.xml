@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://fedor-help.github.io/magic-help-site/</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://fedor-help.github.io/magic-help-site/index.html</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://fedor-help.github.io/magic-help-site/priemety-na-udachu.html</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fedor-help.github.io/magic-help-site/ochishchenie-doma.html</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fedor-help.github.io/magic-help-site/denezhnyy-obryad.html</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fedor-help.github.io/magic-help-site/obryad-na-lubov.html</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fedor-help.github.io/magic-help-site/zashchita-ot-negativa.html</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
