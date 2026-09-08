@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /ddg.html
 
 Sitemap: https://fedor-help.github.io/magic-help-site/sitemap.xml
