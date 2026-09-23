@@ -11,6 +11,7 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 TG_GROUP = "https://t.me/+wRq61Q4JwfNjMGYy"
 TG_MASTER = "https://t.me/fedormagic"
 SITE = "https://fedor-help.github.io/magic-help-site"
+ANALYTICS = '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{"token": "9fa5c8b2927046b3afc6f5610c4b98c7"}\'></script>'
 
 CSS = """@font-face{font-family:'Fedor';src:url('fonts/Fedor.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 :root{--bg:#f7f5f2;--bg-soft:#efece6;--ink:#241f2b;--ink-soft:#5b5470;--accent:#6d4a8f;--accent-2:#a67c52;--accent-2-dark:#8a6238;--card:#ffffff;--line:#e5dfd6}
@@ -118,6 +119,7 @@ def page_html(slug, title, description, h1, body_html, routes, related=None):
   "itemListElement": [{crumbs_html}]
 }}
 </script>
+{ANALYTICS}
 <style>{CSS}</style>
 </head>
 <body>

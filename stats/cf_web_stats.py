@@ -34,7 +34,7 @@ def load_env(path):
 ENV = load_env(ENV_PATH)
 CF_KEY = ENV.get("CLOUDFLARE_API_KEY") or os.environ.get("CLOUDFLARE_API_KEY", "")
 CF_ACCT = ENV.get("CLOUDFLARE_ACCOUNT_ID") or os.environ.get("CLOUDFLARE_ACCOUNT_ID", "")
-SITE_TAG = "b4a30e85650b48358223b4b0d102f7c6"
+SITE_TAG = "9fa5c8b2927046b3afc6f5610c4b98c7"
 SITE_HOST = "fedor-help.github.io"
 
 ctx = ssl.create_default_context()
