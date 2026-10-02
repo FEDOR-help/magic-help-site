@@ -5,7 +5,7 @@
 Тянет данные через официальный GraphQL API и строит графики + цифры.
 Запуск:  python cf_web_stats.py [days]
 """
-import argparse, os, sys, json, ssl, io
+import argparse, os, sys, json, ssl, io, http.client, socket
 import urllib.request, urllib.error
 from datetime import datetime, timedelta, timezone
 
@@ -59,14 +59,58 @@ QUERY = """query WebAnalytics($tag: String!, $f: RumAdaptiveGroupsFilterInput) {
   }
 }"""
 
+GQL_HOST = "api.cloudflare.com"
+GQL_PATH = "/client/v4/graphql"
+
+def _doh_resolve(host):
+    """Резолвинг через DNS-over-HTTPS (dns.google) — обход блокировки DNS в РФ."""
+    url = f"https://dns.google/resolve?name={host}&type=A"
+    r = urllib.request.urlopen(url, timeout=15)
+    data = json.loads(r.read().decode("utf-8"))
+    ips = [a["data"] for a in data.get("Answer", []) if a.get("type") == 1]
+    return ips
+
 def api_gql(variables):
     body = json.dumps({"query": QUERY, "variables": variables}).encode()
-    req = urllib.request.Request("https://api.cloudflare.com/client/v4/graphql", data=body, method="POST")
-    req.add_header("Authorization", f"Bearer {CF_KEY}")
-    req.add_header("Content-Type", "application/json")
-    req.add_header("User-Agent", "Mozilla/5.0")
-    r = urllib.request.urlopen(req, timeout=45, context=ctx)
-    return json.loads(r.read().decode("utf-8", "replace"))
+    headers = {
+        "Authorization": f"Bearer {CF_KEY}",
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0",
+    }
+    try:
+        req = urllib.request.Request(f"https://{GQL_HOST}{GQL_PATH}", data=body, method="POST")
+        for k, v in headers.items():
+            req.add_header(k, v)
+        r = urllib.request.urlopen(req, timeout=45, context=ctx)
+        return json.loads(r.read().decode("utf-8", "replace"))
+    except (urllib.error.URLError, OSError) as e:
+        if "getaddrinfo" not in str(e) and "Name or service not known" not in str(e):
+            raise
+    # системный DNS не работает — резолвим через DoH и коннектимся по IP с SNI/Host
+    ips = _doh_resolve(GQL_HOST)
+    if not ips:
+        raise RuntimeError("Не удалось резолвить api.cloudflare.com даже через DoH")
+    last = None
+    for ip in ips:
+        try:
+            raw = socket.create_connection((ip, 443), timeout=45)
+            ssock = ctx.wrap_socket(raw, server_hostname=GQL_HOST)
+            h = http.client.HTTPConnection(GQL_HOST, 443, timeout=45)
+            h.sock = ssock
+            h.putrequest("POST", GQL_PATH)
+            h.putheader("Host", GQL_HOST)
+            for k, v in headers.items():
+                h.putheader(k, v)
+            h.putheader("Content-Length", str(len(body)))
+            h.endheaders()
+            h.send(body)
+            resp = h.getresponse()
+            data = resp.read().decode("utf-8", "replace")
+            h.close()
+            return json.loads(data)
+        except Exception as ex:
+            last = ex
+    raise last
 
 def fetch_days(days):
     now = datetime.now(timezone.utc)
